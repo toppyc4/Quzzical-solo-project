@@ -16,3 +16,32 @@ main {
     /* justify-content: center; */
     background-color: #F5F7FB;
 }
+
+.intro-div {
+    /* position: relative; */
+    display: flex;
+    margin: auto;
+    flex-flow: column;
+    align-items: center;
+}
+
+.intro-div > h1 {
+    color: #293264;
+    font-size: 50px;
+}
+
+.intro-div > span {
+    color: #293264;
+    font-size: 22px;
+}
+
+.intro-div > button {
+    background: #4D5B9E;
+    color: white;
+    font-size: 26px;
+    border: none;
+    width: 200px;
+    height: 50px;
+    border-radius: 15px;
+    cursor: pointer;
+}

@@ -1,17 +1,18 @@
 import React from "react";
+import { decode } from "html-entities";
 import { nanoid } from "nanoid";
 import "./Question.css";
 
 const Question = (props) => {
   const correctChoiceEl = (
     <div key={nanoid()} className="choice">
-      <p>{`correctA: ${props.correctAnswer}`}</p>
+      <p>{decode(`correctA: ${props.correctAnswer}`)}</p>
     </div>
   );
 
   const incorrectChoicesEl = props.incorrectAnswers.map((choice) => (
     <div key={nanoid()} className="choice">
-      {choice}
+      {decode(choice)}
     </div>
   ));
 
@@ -27,7 +28,7 @@ const Question = (props) => {
 
   return (
     <div className="question-div">
-      <h3>{props.question}</h3>
+      <h3>{decode(props.question)}</h3>
       <div className="choices-div">{sortedChoicesEl}</div>
     </div>
   );
