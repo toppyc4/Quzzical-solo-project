@@ -1,7 +1,7 @@
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import "./App.css";
 // import images from "./imgsFile/imgs";
-import Quiz from "./Quiz";
+import Quiz from "./components/Quiz";
 
 function App() {
   const [quizzing, setQuizzing] = useState(false);
@@ -9,10 +9,6 @@ function App() {
   function startQuiz() {
     setQuizzing((prevState) => !prevState);
     console.log("start Quiz");
-  }
-
-  function selectChoice(id) {
-    console.log("hi");
   }
 
   return (

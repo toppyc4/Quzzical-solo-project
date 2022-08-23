@@ -1,0 +1,51 @@
+
+.container {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    max-width: 69%;
+}
+.container > button {
+    width: 260px;
+    height: 50px;
+    margin: 50px auto;
+
+    background: #4D5B9E;
+    color: white;
+    font-size: 22px;
+    border: none;
+    border-radius: 10px;
+
+    cursor: pointer;
+}
+
+.GAMEOVER-btn-and-text-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.GAMEOVER-btn-and-text-div > button {
+    width: 260px;
+    height: 50px;
+    margin: 50px auto;
+
+    background: #4D5B9E;
+    color: white;
+    font-size: 22px;
+    border: none;
+    border-radius: 10px;
+
+    cursor: pointer;
+}
+
+.GAMEOVER-btn-and-text-div > span {
+    padding-left: 69px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22px;
+
+    color: #293264;
+}
